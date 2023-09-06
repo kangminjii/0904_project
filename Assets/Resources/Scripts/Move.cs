@@ -22,6 +22,8 @@ public class Move : MonoBehaviour
     {
         //Move_1();
         //Move_2();
+        float UD = Input.GetAxis("Vertical");   // 상하 > 이동
+        transform.Rotate(Vector3.up * 10 * Time.deltaTime*UD);
     }
 
     void Move_1() // z값이 증가
